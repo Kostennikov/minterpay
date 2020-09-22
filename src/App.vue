@@ -103,7 +103,7 @@ html, body {
 
 .main {
   margin: auto 0;
-  padding: 20px 0;
+  padding: 1rem 0;
 }
 
 #app {
@@ -120,7 +120,7 @@ html, body {
   color: #2c3e50;
 
   .arrow {
-    padding-right: 40px;
+    padding-right: 2.5rem;
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
@@ -129,15 +129,15 @@ html, body {
   .head-links {
     display: flex;
     justify-content: flex-end;
-    margin: 30px 40px;
+    margin: 1.875rem 2.5rem;
 
     text-transform: uppercase;
 
     &__a {
-      margin-left: 50px;
+      margin-left: 3.125rem;
       text-decoration: none;
       color: #636B6F;
-      font-size: 14px;
+      font-size: 0.875rem;
       line-height: 19px;
       font-family: $nunito;
       transition: .5s;
@@ -153,10 +153,10 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 30px 40px;
+    margin: 1.875rem 2.5rem;
     line-height: 29px;
     @media (max-width: 1024px) {
-      margin: 30px 30px;
+      margin: 1.875rem 1.875rem;
     }
     @media (max-width: 768px) {
 
@@ -165,7 +165,7 @@ html, body {
     @media screen and (max-width: 680px) {
       flex-direction: column;
       align-items: center;
-      margin: 30px 10px;
+      margin: 1.875rem 0.625rem;
 
 
     }
@@ -192,10 +192,10 @@ html, body {
       &-first {
         align-self: center;
         //padding-bottom: 15px;
-        margin-right: 25px;
+        margin-right: 1.5625rem;
         text-decoration: underline;
         color: #636B6F;
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 19px;
         transition: .5s;
         text-transform: uppercase;
@@ -217,11 +217,11 @@ html, body {
 
 
     .routerLink {
-      margin-right: 25px;
+      margin-right: 1.5625rem;
       text-decoration: none;
       font-style: normal;
       font-weight: 300;
-      font-size: 14px;
+      font-size: 0.875rem;
       line-height: 19px;
       text-align: center;
       text-transform: capitalize;
@@ -242,12 +242,12 @@ html, body {
 
       &.router-link-exact-active {
         font-weight: 500;
-        font-size: 24px;
+        font-size: 1.5rem;
         line-height: 28px;
         @media screen and (max-width: 768px) {
           text-shadow: 0 0 black;
           font-weight: 300;
-          font-size: 14px;
+          font-size: 0.875rem;
           line-height: 19px;
           box-shadow: 0 1px 0 0;
 
@@ -276,7 +276,7 @@ html, body {
       //padding-right: 0;
     }
     @media screen and (max-width: 680px) {
-      padding-top: 15px;
+      padding-top: 1rem;
     }
     &-icon{
       height: 16px;

@@ -23,7 +23,7 @@ export default {
 <style lang="scss" scoped>
 .main {
   padding: 5px;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 25px;
   //font-family: $roboto;
   h1 {

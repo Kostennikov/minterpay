@@ -242,14 +242,14 @@ a {
 }
 
 .card__content {
-  padding-bottom: 15px;
+  padding-bottom: 1rem;
   width: fit-content;
   margin: 0 auto;
 }
 
 .card__title {
-  padding-bottom: 30px;
-  font-size: 64px;
+  padding-bottom: 1.875rem;
+  font-size: 4rem;
   line-height: 87px;
 
   letter-spacing: 0.05em;
@@ -259,9 +259,9 @@ a {
 }
 
 .card__desc {
-  padding-bottom: 30px;
+  padding-bottom: 1.875rem;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.125rem;
   /*line-height: 25px;*/
 
 
@@ -307,8 +307,8 @@ a {
 
 #password {
   font-weight: 300;
-  font-size: 18px;
-  padding-right: 40px;
+  font-size: 1.125rem;
+  padding-right: 2.5rem;
   /*line-height: 25px;*/
 
 
@@ -319,11 +319,11 @@ a {
 
   width: 405px;
   height: 39px;
-  padding-left: 34px;
-  padding-right: 15px;
-  margin-bottom: 44px;
+  padding-left: 2.125rem;
+  padding-right: 1rem;
+  margin-bottom: 2.75rem;
   line-height: 19px;
-  font-size: 16px;
+  font-size: 1rem;
   /*margin-top: 10px;*/
   background: #FFFFFF;
   border: 1px solid #C4C4C4;
@@ -341,7 +341,7 @@ input:focus {
 .input::placeholder {
   color: #C4C4C4;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 19px;
   letter-spacing: 0.05em;
 
@@ -383,12 +383,12 @@ input:focus {
 .loginButton {
   width: 405px;
   height: 39px;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
   background: #0389B4;
   border: 1px solid #C4C4C4;
   box-sizing: border-box;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 19px;
   text-transform: uppercase;
   cursor: pointer;
@@ -447,7 +447,7 @@ input:focus {
 }
 @media screen and (max-width: 650px) {
   .card__title{
-    font-size: 50px;
+    font-size: 3rem;
     line-height: 72px;
   }
   .input {

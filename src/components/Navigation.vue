@@ -23,11 +23,11 @@ export default {
   flex-wrap: wrap;
   padding: 0 10px;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 28px;
 
   @media screen and (max-width: 529px) {
-    padding-top: 10px;
+    padding-top: 0.625rem;
 
   }
 
@@ -44,7 +44,7 @@ export default {
 
   @media screen and (max-width: 767px) {
     .navBar {
-      padding-top: 10px
+      padding-top: 0.625rem;
     }
     .arrow {
       display: none;
