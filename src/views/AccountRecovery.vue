@@ -21,7 +21,7 @@
         <svg class="input-field__envelope" width="15" height="15" viewBox="0 0 15 15">
           <use href="../assets/sprite.svg#envelope-solid-gr" />
         </svg>
-<!--        <img class="input-field__envelope" src="../assets/envelope-solid-gr.svg" alt="">-->
+
 
         <small
             class="helper-text"
@@ -282,7 +282,7 @@ input:focus {
   font-size: 14px;
   line-height: 19px;
   text-transform: uppercase;
-
+  cursor: pointer;
 
   letter-spacing: 0.05em;
 

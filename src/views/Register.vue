@@ -20,7 +20,7 @@
         <svg class="input-field__user" width="13" height="15" viewBox="0 0 13 15">
           <use href="../assets/sprite.svg#user-solid-gr" />
         </svg>
-<!--        <img class="input-field__user" src="../assets/user-solid-gr.svg" alt="">-->
+
         <small
             class="helper-text"
             v-if="$v.name.$dirty && !$v.name.required"
@@ -44,7 +44,7 @@
         <svg class="input-field__envelope" width="15" height="15" viewBox="0 0 15 15">
           <use href="../assets/sprite.svg#envelope-solid-gr" />
         </svg>
-<!--        <img class="input-field__envelope" src="../assets/envelope-solid-gr.svg" alt="">-->
+
 
         <small
             class="helper-text"
@@ -72,18 +72,18 @@
         <svg class="input-field__lock" width="13" height="15" viewBox="0 0 13 15">
           <use href="../assets/sprite.svg#lock-solid-gr" />
         </svg>
-<!--        <img class="input-field__lock" src="../assets/lock-solid-gr.svg" alt="">-->
+
 
 <!--        button-->
         <button class="passToggle" @click.prevent="toggleType">
           <svg class="passToggle__img" v-show="showPass" width="19" height="15" viewBox="0 0 19 15">
             <use href="../assets/sprite.svg#view" />
           </svg>
-<!--          <img class="passToggle__img" v-show="showPass" src="../assets/view.svg" alt="">-->
+
           <svg class="passToggle__img" v-show="!showPass" width="19" height="15" viewBox="0 0 19 15">
             <use href="../assets/sprite.svg#no-view" />
           </svg>
-<!--          <img class="passToggle__img" v-show="!showPass" src="../assets/no-view.svg" alt="">-->
+
         </button>
         <small
             class="helper-text"
@@ -121,7 +121,7 @@
 
       <p class="center">
         Have an account?
-        <router-link to="/login">Login</router-link>
+        <router-link class="regLink" to="/login">Login</router-link>
       </p>
     </div>
   </form>
@@ -356,7 +356,7 @@ input:focus {
   height: 25px;
   background-color: #FFFFFF;
   border: none;
-
+  cursor: pointer;
 }
 
 .passToggle:focus {
@@ -391,7 +391,7 @@ input:focus {
   font-size: 14px;
   line-height: 19px;
   text-transform: uppercase;
-
+  cursor: pointer;
 
   letter-spacing: 0.05em;
 
@@ -425,12 +425,25 @@ input:focus {
   border: 1px solid #888888;
   box-sizing: border-box;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .remember__span {
   position: absolute;
   left: 20px;
   top: -2px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+.regLink{
+  transition: .3s;
+}
+.regLink:hover{
+  /*text-shadow: 0 0 #026a8c;*/
+  border-bottom: 1px solid #00C2FF;
+  /*box-shadow: 0 1px 0 0;*/
 }
 @media screen and (max-width: 650px) {
   .card__title{

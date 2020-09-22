@@ -28,23 +28,22 @@
 
       </div>
       <div class="footer__links">
-        <a href="#">
-          <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
-            <use href="./assets/sprite.svg#donate-solid" />
+        <a href="#" class="footer__links-icon">
+          <svg class="icon icon-donate" width="16" height="16" viewBox="0 0 16 16">
+            <use xlink:href="./assets/sprite.svg#donate-solid" />
           </svg>
         </a>
-        <a href="#">
-          <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
-            <use href="./assets/sprite.svg#envelope-solid" />
+        <a href="#" class="footer__links-icon">
+          <svg class="icon icon-envelope" width="16" height="16" viewBox="0 0 16 16">
+            <use xlink:href="./assets/sprite.svg#envelope-solid" />
           </svg>
         </a>
-        <a href="#">
-          <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
-            <use href="./assets/sprite.svg#telegram" />
+        <a href="#" class="footer__links-icon">
+          <svg class="icon icon-telegram" width="16" height="16" viewBox="0 0 16 16">
+            <use xlink:href="./assets/sprite.svg#telegram" />
           </svg>
         </a>
-<!--        <a href="#"><img class="footer__links-img" alt="" src="./assets/envelope-solid.svg"></a>-->
-<!--        <a href="#"><img class="footer__links-img" alt="" src="./assets/Telegram.svg"></a>-->
+
       </div>
     </footer>
   </div>
@@ -152,9 +151,10 @@ html, body {
   .footer {
     //flex: 0 0 auto;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
     margin: 30px 40px;
+    line-height: 29px;
     @media (max-width: 1024px) {
       margin: 30px 30px;
     }
@@ -172,7 +172,7 @@ html, body {
 
     &__nav {
       display: flex;
-      align-items: baseline;
+      align-items: center;
       justify-content: center;
       flex-wrap: wrap;
       font-family: $nunito;
@@ -190,7 +190,7 @@ html, body {
 
 
       &-first {
-        align-self: baseline;
+        align-self: center;
         //padding-bottom: 15px;
         margin-right: 25px;
         text-decoration: underline;
@@ -226,13 +226,13 @@ html, body {
       text-align: center;
       text-transform: capitalize;
       color: #636B6F;
-      transition: .3s;
+      transition: 0.2s 0.1s ease;
+      outline: 1px solid transparent;
       &:hover{
         text-shadow: 0 0 black;
         box-shadow: 0 1px 0 0;
       }
       @media screen and (max-width: 414px) {
-
         margin: 0 5px
       }
 
@@ -244,29 +244,31 @@ html, body {
         font-weight: 500;
         font-size: 24px;
         line-height: 28px;
-
-      }
-      &.router-link-exact-active:hover {
-        text-shadow: none;
-        box-shadow: none;
-      }
-        @media screen and (max-width: 728px) {
+        @media screen and (max-width: 768px) {
           text-shadow: 0 0 black;
           font-weight: 300;
           font-size: 14px;
           line-height: 19px;
           box-shadow: 0 1px 0 0;
 
+        }
       }
+
+      //&.router-link-exact-active:hover {
+      //  text-shadow: none;
+      //  box-shadow: none;
+      //}
+
 
     }
   }
 
   .footer__links {
     display: flex;
-    align-items: baseline;
+    align-items: flex-end;
     justify-content: space-between;
     width: 100px;
+    //padding-bottom: 1px;
     @media (max-width: 991px) {
       //padding-right: 20px;
     }
@@ -276,8 +278,15 @@ html, body {
     @media screen and (max-width: 680px) {
       padding-top: 15px;
     }
-    .footer__links-img {
-      align-self: flex-end;
+    &-icon{
+      height: 16px;
+    }
+    .icon{
+      transition: .5s;
+      fill: #636B6F;
+    }
+    .icon:hover {
+      fill: #0389B4;
     }
   }
 

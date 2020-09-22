@@ -18,7 +18,7 @@ export default {
 <style lang="scss" scoped>
 .navBar {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   padding: 0 10px;
@@ -26,7 +26,7 @@ export default {
   font-size: 24px;
   line-height: 28px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 529px) {
     padding-top: 10px;
 
   }
@@ -36,11 +36,11 @@ export default {
     /*margin: -6px;*/
   }
 
-  //@media (max-width: 1024px) {
-  //  .arrow {
-  //    display: none;
-  //  }
-  //}
+  @media (max-width: 1024px) {
+    .arrow {
+      display: none;
+    }
+  }
 
   @media screen and (max-width: 767px) {
     .navBar {
